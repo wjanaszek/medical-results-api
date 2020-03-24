@@ -60,7 +60,8 @@ constructor(
       ).permitAll()
       .antMatchers(
         HttpMethod.GET,
-        "/api/auth/refresh"
+        "/api/auth/refresh",
+        "api/results"
       ).permitAll()
       .antMatchers().permitAll()
       .anyRequest().authenticated()
