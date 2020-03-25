@@ -5,6 +5,10 @@ import org.wjanaszek.medicalresultsengine.result.dto.request.SearchByNameRequest
 internal data class ResultQueryFacadeImpl(
   private val resultRepository: ResultRepository
 ) : ResultQueryFacade {
+  override fun searchByNameForAutocomplete(name: String): List<String> {
+    return resultRepository.searchByName(name)
+  }
+
   override fun searchForResultByName(data: SearchByNameRequestDto): List<Result> {
     return resultRepository.findAllByNameContaining(data.name)
   }
