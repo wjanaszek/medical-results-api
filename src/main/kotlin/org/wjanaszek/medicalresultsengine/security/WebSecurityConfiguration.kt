@@ -74,7 +74,6 @@ constructor(
 
     httpSecurity
       .headers()
-      .frameOptions().sameOrigin()
       .cacheControl()
   }
 
