@@ -20,7 +20,7 @@ internal data class ResultNorm(
   val id: Long? = null,
 
   @Column(name = "GRAMS_PER_LITER")
-  val gramsPerLiter: Int,
+  val description: String,
 
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "RESULT")

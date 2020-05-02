@@ -27,9 +27,9 @@ internal data class Result(
   @OneToMany(mappedBy = "result")
   val norms: Set<ResultNorm> = setOf(),
 
-  @Column(name = "RESULTS_ABOVE_NORM", length = 1500)
-  val resultsAboveNorm: String,
+  @Column(name = "ABOVE_NORM", length = 1500)
+  val aboveNorm: String,
 
-  @Column(name = "RESULTS_BELOW_NORM", length = 1500)
-  val resultsBelowNorm: String
+  @Column(name = "BELOW_NORM", length = 1500)
+  val belowNorm: String
 )

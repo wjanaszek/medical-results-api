@@ -9,8 +9,8 @@ internal class ResultFactory {
       name = dto.name,
       description = dto.description,
       norms = mutableSetOf(dto.menNorm, dto.womenNorm),
-      resultsAboveNorm = dto.resultsAboveNorm,
-      resultsBelowNorm = dto.resultsBelowNorm
+      aboveNorm = dto.resultsAboveNorm,
+      belowNorm = dto.resultsBelowNorm
     )
   }
 
@@ -20,8 +20,8 @@ internal class ResultFactory {
       name = dto.name,
       description = dto.description,
       norms = mutableSetOf(dto.menNorm, dto.womenNorm),
-      resultsAboveNorm = dto.resultsAboveNorm,
-      resultsBelowNorm = dto.resultsBelowNorm
+      aboveNorm = dto.resultsAboveNorm,
+      belowNorm = dto.resultsBelowNorm
     )
   }
 }
