@@ -6,11 +6,10 @@ internal data class ResultQueryFacadeImpl(
   private val resultRepository: ResultRepository
 ) : ResultQueryFacade {
   override fun searchByNameForAutocomplete(name: String): List<String> {
-    return resultRepository.searchByName(name)
+    return resultRepository.searchAllNameByName(name)
   }
 
-  override fun searchForResultByName(data: SearchByNameRequestDto): List<Result> {
-    val result = resultRepository.searchAllByNameContaining(data.name)
-    return result
+  override fun searchForResultsByName(data: SearchByNameRequestDto): List<Result> {
+    return resultRepository.searchAllResultByName(data.name)
   }
 }

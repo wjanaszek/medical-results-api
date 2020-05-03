@@ -18,6 +18,6 @@ internal class ResultEndpoint(
 ) {
   @GetMapping
   fun searchByName(@RequestParam query: String): List<Result> {
-    return resultQueryFacade.searchForResultByName(SearchByNameRequestDto(query))
+    return resultQueryFacade.searchForResultsByName(SearchByNameRequestDto(query))
   }
 }

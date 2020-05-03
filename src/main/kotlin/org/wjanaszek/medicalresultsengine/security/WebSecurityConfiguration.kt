@@ -61,7 +61,8 @@ constructor(
       .antMatchers(
         HttpMethod.GET,
         "/api/auth/refresh",
-        "/api/results"
+        "/api/results",
+        "/api/results/autocomplete/name"
       ).permitAll()
       .antMatchers().permitAll()
       .anyRequest().authenticated()

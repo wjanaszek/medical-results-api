@@ -4,5 +4,5 @@ import org.wjanaszek.medicalresultsengine.result.dto.request.SearchByNameRequest
 
 internal interface ResultQueryFacade {
   fun searchByNameForAutocomplete(name: String): List<String>
-  fun searchForResultByName(data: SearchByNameRequestDto): List<Result>
+  fun searchForResultsByName(data: SearchByNameRequestDto): List<Result>
 }
