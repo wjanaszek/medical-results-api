@@ -24,6 +24,9 @@ internal data class Result(
   @Column(name = "DESCRIPTION", length = 1500)
   val description: String,
 
+  @Column(name = "WAY_TO_GET", length = 1500)
+  val wayToGet: String,
+
   @OneToMany(mappedBy = "result")
   val norms: Set<ResultNorm> = setOf(),
 

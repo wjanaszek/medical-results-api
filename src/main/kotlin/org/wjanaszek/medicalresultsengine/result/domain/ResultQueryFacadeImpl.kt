@@ -10,6 +10,7 @@ internal data class ResultQueryFacadeImpl(
   }
 
   override fun searchForResultByName(data: SearchByNameRequestDto): List<Result> {
-    return resultRepository.findAllByNameContaining(data.name)
+    val result = resultRepository.searchAllByNameContaining(data.name)
+    return result
   }
 }

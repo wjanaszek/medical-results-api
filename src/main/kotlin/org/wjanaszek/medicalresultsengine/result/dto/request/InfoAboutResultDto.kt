@@ -10,6 +10,9 @@ internal open class InfoAboutResultDto(
   @field:NotEmpty(message = "Description cannot be empty")
   val description: String,
 
+  @field:NotEmpty(message = "Way to get cannot be empty")
+  val wayToGet: String,
+
   @field:NotEmpty(message = "Men norm cannot be empty")
   val menNorm: ResultNorm,
 

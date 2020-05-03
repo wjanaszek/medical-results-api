@@ -9,8 +9,9 @@ internal class UpdateInfoAboutResultDto(
 
   name: String,
   description: String,
+  wayToGet: String,
   menNorm: ResultNorm,
   womenNorm: ResultNorm,
-  resultsBelowNorm: String,
-  resultsAboveNorm: String
-) : InfoAboutResultDto(name, description, menNorm, womenNorm, resultsBelowNorm, resultsAboveNorm)
+  belowNorm: String,
+  aboveNorm: String
+) : InfoAboutResultDto(name, description, wayToGet, menNorm, womenNorm, belowNorm, aboveNorm)

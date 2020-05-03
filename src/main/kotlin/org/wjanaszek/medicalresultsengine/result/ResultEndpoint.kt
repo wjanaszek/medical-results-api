@@ -17,7 +17,7 @@ internal class ResultEndpoint(
   private val resultQueryFacade: ResultQueryFacade
 ) {
   @GetMapping
-  fun searchByName(@RequestParam name: String): List<Result> {
-    return resultQueryFacade.searchForResultByName(SearchByNameRequestDto(name))
+  fun searchByName(@RequestParam query: String): List<Result> {
+    return resultQueryFacade.searchForResultByName(SearchByNameRequestDto(query))
   }
 }

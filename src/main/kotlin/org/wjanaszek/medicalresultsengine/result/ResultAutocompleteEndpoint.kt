@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController
 import org.wjanaszek.medicalresultsengine.result.domain.ResultQueryFacade
 
 const val RESULT_AUTOCOMPLETE_URI = "$RESULT_URI/autocomplete"
-const val NAME_URI = "$RESULT_AUTOCOMPLETE_URI/name"
+const val NAME_URI = "name"
 
 @RestController
-@RequestMapping(RESULT_URI)
+@RequestMapping(RESULT_AUTOCOMPLETE_URI)
 internal class ResultAutocompleteEndpoint(
   private val resultQueryFacade: ResultQueryFacade
 ) {

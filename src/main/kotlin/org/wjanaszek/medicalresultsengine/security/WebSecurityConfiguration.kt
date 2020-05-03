@@ -61,7 +61,7 @@ constructor(
       .antMatchers(
         HttpMethod.GET,
         "/api/auth/refresh",
-        "api/results"
+        "/api/results"
       ).permitAll()
       .antMatchers().permitAll()
       .anyRequest().authenticated()
@@ -91,7 +91,9 @@ constructor(
         "/**/*.js",
         "/*.css",
         "/assets/**",
-        "/*.js"
+        "/*.js",
+        "/api/results",
+        "/api/results/autocomplete/name"
       )
   }
 }

@@ -13,7 +13,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "RESULT_NORMS")
-internal data class ResultNorm(
+internal class ResultNorm(
   @Id
   @Column(name = "ID")
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,7 +23,7 @@ internal data class ResultNorm(
   val description: String,
 
   @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "RESULT")
+  @JoinColumn(name = "RESULT_ID")
   @JsonIgnore
   val result: Result
 )

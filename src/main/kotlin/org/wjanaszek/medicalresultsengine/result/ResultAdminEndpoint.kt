@@ -46,10 +46,11 @@ internal class ResultAdminEndpoint(
         id = id,
         name = data.name,
         description = data.description,
+        wayToGet = data.wayToGet,
         menNorm = data.menNorm,
         womenNorm = data.womenNorm,
-        resultsAboveNorm = data.aboveNorm,
-        resultsBelowNorm = data.belowNorm
+        aboveNorm = data.aboveNorm,
+        belowNorm = data.belowNorm
       )
     )
   }
