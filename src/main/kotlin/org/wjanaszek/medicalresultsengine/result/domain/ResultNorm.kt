@@ -19,7 +19,7 @@ internal data class ResultNorm(
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   val id: Long? = null,
 
-  @Column(name = "GRAMS_PER_LITER")
+  @Column(name = "DESCRIPTION", length = 1500)
   val description: String,
 
   @ManyToOne(fetch = FetchType.LAZY)

@@ -16,9 +16,9 @@ internal open class InfoAboutResultDto(
   @field:NotEmpty(message = "Women norm cannot be empty")
   val womenNorm: ResultNorm,
 
-  @field:NotEmpty(message = "Results below norm cannot be empty")
-  val resultsBelowNorm: String,
+  @field:NotEmpty(message = "Below norm cannot be empty")
+  val belowNorm: String,
 
-  @field:NotEmpty(message = "Results above norm cannot be empty")
-  val resultsAboveNorm: String
+  @field:NotEmpty(message = "Above norm cannot be empty")
+  val aboveNorm: String
 )

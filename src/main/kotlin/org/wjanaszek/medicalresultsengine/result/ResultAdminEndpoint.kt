@@ -48,8 +48,8 @@ internal class ResultAdminEndpoint(
         description = data.description,
         menNorm = data.menNorm,
         womenNorm = data.womenNorm,
-        resultsAboveNorm = data.resultsAboveNorm,
-        resultsBelowNorm = data.resultsBelowNorm
+        resultsAboveNorm = data.aboveNorm,
+        resultsBelowNorm = data.belowNorm
       )
     )
   }
